@@ -2,37 +2,18 @@
   if($_POST){
       
         if(isset($_COOKIE['nome'])){
-            echo "Nome: ".$_COOKIE['nome'] ."<br>";
-            echo "Cognome: ".$_COOKIE['cognome'];
-        }
-
-        else{
-            $nome = $_POST['nome'] ;
-            $cognome = $_POST['cognome'];
-            echo "Nome : ".$nome ."<br>";
-            echo "Cognome : ".$cognome;
-            
-        }
-    
-    /*
-    if(isset($_COOKIE['nome'])){
             
             echo "Nome: ".$_COOKIE['nome'] ."<br>";
             echo "Cognome: ".$_COOKIE['cognome'];
         }
 
         else{
-            setcookie('nome', $_POST['nome'], time()+10);
-            setcookie('cognome', $_POST['cognome'], time()+10);
+            echo "Nome: ".$_POST['nome'] ."<br>";
+            echo "Cognome: ".$_POST['cognome'];
         }
-    */
 
         setcookie('nome', $_POST['nome'], time()+10);
         setcookie('cognome', $_POST['cognome'], time()+10);
-      
-
-        
-      
   }
   
   else
