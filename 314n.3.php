@@ -11,6 +11,9 @@
             $_SESSION['sfondo'] = $_POST['sfondo'];
             $_SESSION['font'] = $_POST['font'];
             $_SESSION['carattere'] = $_POST['carattere'];
+            echo "Sfondo: " . $_SESSION['sfondo'] ."<br>";
+            echo "Font: " . $_SESSION['font'] ."<br>";
+            echo "Carattere: " . $_SESSION['carattere'] ;
         }
     }
     else
