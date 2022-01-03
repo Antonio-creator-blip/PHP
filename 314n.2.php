@@ -13,6 +13,19 @@
             echo "Cognome : ".$cognome;
             
         }
+    
+    /*
+    if(isset($_COOKIE['nome'])){
+            
+            echo "Nome: ".$_COOKIE['nome'] ."<br>";
+            echo "Cognome: ".$_COOKIE['cognome'];
+        }
+
+        else{
+            setcookie('nome', $_POST['nome'], time()+10);
+            setcookie('cognome', $_POST['cognome'], time()+10);
+        }
+    */
 
         setcookie('nome', $_POST['nome'], time()+10);
         setcookie('cognome', $_POST['cognome'], time()+10);
