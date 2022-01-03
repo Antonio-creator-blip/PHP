@@ -2,19 +2,14 @@
     if($_POST){
         session_start();
         
-        if(isset($_SESSION['sfondo'])){
-            echo "Sfondo: " . $_SESSION['sfondo'] ."<br>";
-            echo "Font: " . $_SESSION['font'] ."<br>";
-            echo "Carattere: " . $_SESSION['carattere'] ;
-        }
-        else{
+        if(!(isset($_SESSION['sfondo']))){
             $_SESSION['sfondo'] = $_POST['sfondo'];
             $_SESSION['font'] = $_POST['font'];
             $_SESSION['carattere'] = $_POST['carattere'];
-            echo "Sfondo: " . $_SESSION['sfondo'] ."<br>";
-            echo "Font: " . $_SESSION['font'] ."<br>";
-            echo "Carattere: " . $_SESSION['carattere'] ;
         }
+        echo "Sfondo: " . $_SESSION['sfondo'] ."<br>";
+        echo "Font: " . $_SESSION['font'] ."<br>";
+        echo "Carattere: " . $_SESSION['carattere'] ;
     }
     else
     {
